@@ -1,26 +1,34 @@
-# 环境
+查看 python 版本
 
-1. python 3.8.10
-2. pyside6 6.1.3
+```python
+$ py --version
+Python 3.10.10
+```
 
 
 
 创建虚拟环境
 
 ```
-python -m venv env
+py -m venv venv
 ```
 
 激活虚拟环境
 
 ```
-.\env\Scripts\Activate.ps1
+.\venv\Scripts\activate
 ```
+
+导出软件库（开发者）
+```python
+pip freeze > requirements.txt
+```
+
 
 安装软件库
 
 ```
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 
 
