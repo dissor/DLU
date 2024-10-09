@@ -19,17 +19,31 @@ py -m venv venv
 .\venv\Scripts\activate
 ```
 
-导出软件库（开发者）
-```python
-pip freeze > requirements.txt
-```
-
 
 安装软件库
 
 ```
 pip install -r requirements.txt
 ```
+
+导出软件库（开发者）
+```python
+pip freeze > requirements.txt
+```
+
+生成资源依赖文件（开发者）
+```bash
+py .\scripts\create.py
+```
+
+生成可执行文件（开发者）
+```bash
+py .\scripts\toexe.py
+```
+
+# 注意
+
+修改qrc文件，需要及时生成资源依赖文件
 
 
 
